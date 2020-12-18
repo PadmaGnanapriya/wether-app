@@ -6,13 +6,10 @@ function Header() {
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Navbar.Brand href="#home">Weather App</Navbar.Brand>
+                <Navbar.Brand>Weather App</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link>
-                            <Link to="/home">Home</Link>
-                        </Nav.Link>
                         <Nav.Link>
                             <Link to="/signin">Sign in</Link>
                         </Nav.Link>
@@ -21,9 +18,9 @@ function Header() {
                         </Nav.Link>
 
                         <NavDropdown title="Sensors" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="Temperature">Temperature</NavDropdown.Item>
-                            <NavDropdown.Item href="Rain">Rain</NavDropdown.Item>
-                            <NavDropdown.Item href="Wind">Wind</NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/temperature">Temperature</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/rain">Rain</Link></NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/wind">Wind</Link></NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
